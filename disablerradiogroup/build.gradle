@@ -1,5 +1,29 @@
 apply plugin: 'com.android.library'
 
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'disablerradiogroup'
+
+    publishedGroupId = 'com.fstranieri.disablerradiogroup'
+    libraryName = 'DisablerRadioGroup'
+    artifact = 'disablerradiogroup'
+
+    libraryDescription = 'A RadioGroup able to enable and disable a view selecting a RadioButton in it on Android'
+
+    siteUrl = 'https://github.com/FStranieri/DisablerRadioGroup'
+    gitUrl = 'https://github.com/FStranieri/DisablerRadioGroup.git'
+
+    libraryVersion = '1.0'
+
+    developerId = 'fstranieri'
+    developerName = 'Francesco Stranieri'
+    developerEmail = 'fer.stranieri@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.2"
@@ -23,3 +47,9 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.2.1'
 }
+
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
+
+
+
