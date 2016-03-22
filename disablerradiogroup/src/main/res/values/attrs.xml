@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="DisablerRadioGroup">
+        <attr name="dependentViewId" format="reference" />
+        <attr name="disablerRadio" format="reference" />
+    </declare-styleable>
+
+</resources>
